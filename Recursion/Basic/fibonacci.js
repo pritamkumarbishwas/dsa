@@ -1,14 +1,19 @@
 /*
 0 1 1 2 3 5 8 13 21 34 
 
+TC: O(2N) two the power of N
+SC: O(N)
 
 */
 
 function fibonacci(N) {
-    if (N < 1) {
-        return 1;
+    if (N <= 1) {
+        return N;
     }
-    return fibonacci(N - 1) + fibonacci(N - 2);
+    let last = fibonacci(N - 1);
+    let secLast = fibonacci(N - 2);
+
+    return last + secLast;
 }
-const N = 3;
+const N = 4;
 console.log(fibonacci(N));
