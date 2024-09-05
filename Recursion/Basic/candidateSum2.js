@@ -41,7 +41,7 @@ const candidates = [10, 1, 2, 7, 6, 1, 5];
 const target = 8;
 console.log(candiateSum(candidates, target));
 
-// ============================Optimize================================
+// ============================Optimize===============================================
 function findCandidateSum(ind, target, candidate, ans, ds) {
     if (target === 0) {
         ans.push([...ds]);
