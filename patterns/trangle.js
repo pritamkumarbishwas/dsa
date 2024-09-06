@@ -233,6 +233,7 @@ for (let i = m - 2; i >= 0; i--) {
             str += " ";
         }
         // Add the second star
+        
         str += "*";
     }
 
