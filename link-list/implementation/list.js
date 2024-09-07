@@ -5,7 +5,7 @@ class Node {
     }
 }
 
-class LinkList {
+class LinkedList {
     constructor() {
         this.head = null;
         this.size = 0;
@@ -109,6 +109,7 @@ class LinkList {
             console.log("list is Empty");
             return;
         }
+
         if (this.size == 1) {
             this.head = null;
         } else {
@@ -153,20 +154,22 @@ class LinkList {
 
 }
 
-let list = new LinkList();
-console.log(list.print());
-console.log(list.isEmpty());
-console.log(list.getSize());
-list.prepand(2);
-list.append(12)
-list.append(13)
-list.append(15)
-list.append(155)
-console.log(list.isEmpty());
-console.log(list.getSize());
-console.log(list.print());
-list.insertAt(3, 8)
-list.reoveFirst();
-list.removeLast();
-list.removeSpecific(15);
-console.log(list.print());
+module.exports = LinkedList;
+
+// let list = new LinkedList();
+// console.log(list.print());
+// console.log(list.isEmpty());
+// console.log(list.getSize());
+// list.prepand(2);
+// list.append(12)
+// list.append(13)
+// list.append(15)
+// list.append(155)
+// console.log(list.isEmpty());
+// console.log(list.getSize());
+// console.log(list.print());
+// list.insertAt(3, 8)
+// list.reoveFirst();
+// list.removeLast();
+// list.removeSpecific(15);
+// console.log(list.print());
