@@ -36,7 +36,7 @@ class LinkedList {
     append(value) {
         const newNode = new Node(value);
 
-        if (!this.head) {
+        if (this.isEmpty()) {
             this.head = newNode;
         } else {
             let current = this.head;
