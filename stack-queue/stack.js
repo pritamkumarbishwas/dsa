@@ -2,14 +2,14 @@ class Stack {
     constructor() {
         this.stack = [];
     }
-    // psuh element
+    // Adds an element to the top of the stack.
     push(element) {
         // TC : O(1)
         // SC : O(1)
         this.stack.push(element);
     }
 
-    // remove element
+    // Removes the element from the top of the stack.
     pop() {
         // TC : O(1)
         // SC : O(1)
@@ -19,7 +19,7 @@ class Stack {
         return this.stack.pop();
     }
 
-    //top element
+    // Returns the element at the top of the stack without removing it.
     pick() {
         // TC : O(1)
         // SC : O(1)
@@ -29,7 +29,7 @@ class Stack {
         return this.stack[this.stack.length - 1];
     }
 
-    // check empty
+    //Checks if the stack is empty.
     isEmpty() {
         // TC : O(1)
         // SC : O(1)

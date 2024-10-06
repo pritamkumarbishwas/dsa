@@ -58,7 +58,7 @@ class DoubleLinedkList {
                 newNode.next = this.head;
                 this.head.prev = newNode;
                 this.head = newNode;
-            }
+            }   
         } else {
             let current = this.head;
             let count = 0;
@@ -137,12 +137,15 @@ class DoubleLinedkList {
                 }
 
                 current.prev.next = current.next;
+
                 if (current.next) {
                     current.next.prev = current.prev;
                 }
+                
                 this.size--;
                 return;
             }
+
             current = current.next;
         }
     }
